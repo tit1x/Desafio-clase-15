@@ -41,7 +41,14 @@
                 ¡Hacé tu pedido online! Retiro en Tienda. Todos los medios de pago.
             </h6>
 
-            <!--Aca va un buscador-->
+            <nav class="navbar navbar-light">
+                <div class="container-fluid">
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success buscador" type="submit"> <h4> Buscador </h4> </button>
+                  </form>
+                </div>
+            </nav>
       
             <button>
                 <a class="text-decoration-none" href="Productos.html"> <h4>Productos</h4> </a> 
@@ -53,9 +60,9 @@
     <nav>
 
         <div class="div-lista">
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  Ordenar por
+            <div class="dropdown div-menu-dropdown">
+                <button class="btn btn-secondary dropdown-toggle menu-dropdown" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                 <h4> Ordenar por </h4>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li><a class="dropdown-item" href="#">Relevancia</a></li>
@@ -63,7 +70,7 @@
                   <li><a class="dropdown-item" href="#">Menor precio</a></li>
                 </ul>
                 <button> Filtrar</button>
-              </div> 
+            </div> 
             <h2>Productos</h2>
             <ul class="lista-exterior"><!--Los h3 dentro de esta lista tienen una checkbox para filtrar como buscador-->
                 <li> <h3>Congelados</h3> </li>

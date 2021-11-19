@@ -39,3 +39,21 @@ ul {
     padding: 10px;
     text-align: center;
 }
+
+.div-menu-dropdown {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.menu-dropdown {
+    background-color: rgb(140, 223, 191);
+    padding: 7px;
+    transition: all 0.5s;
+    @extend %flex-row;
+}
+
+.menu-dropdown:hover {
+    padding: 12px;
+    border: 4px solid rgb(201, 201, 92);
+}

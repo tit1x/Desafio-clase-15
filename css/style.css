@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
-.mi-perfil, .contactos, .menu, .imagen-inicio-pie-de-pagina, .carrito {
+.menu-dropdown, .mi-perfil, .contactos, .menu, .imagen-inicio-pie-de-pagina, .carrito {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -61,7 +61,7 @@ h6 {
   grid-template-areas: "header" "section" "footer";
 }
 
-.mi-perfil, .contactos, .menu, .imagen-inicio-pie-de-pagina, .carrito {
+.menu-dropdown, .mi-perfil, .contactos, .menu, .imagen-inicio-pie-de-pagina, .carrito {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -105,7 +105,18 @@ h6 {
   text-align: center;
 }
 
-.mi-perfil, .contactos, .menu, .imagen-inicio-pie-de-pagina, .carrito {
+.buscador {
+  background-color: #8cdfbf;
+  padding: 7px;
+  transition: all 0.5s;
+}
+
+.buscador:hover {
+  padding: 12px;
+  border: 4px solid #c9c95c;
+}
+
+.menu-dropdown, .mi-perfil, .contactos, .menu, .imagen-inicio-pie-de-pagina, .carrito {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -210,7 +221,7 @@ button:hover {
   border: 0px solid white;
 }
 
-.carrito, .imagen-inicio-pie-de-pagina, .menu, .contactos, .mi-perfil {
+.menu-dropdown, .carrito, .imagen-inicio-pie-de-pagina, .menu, .contactos, .mi-perfil {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -258,7 +269,24 @@ ul {
   text-align: center;
 }
 
-.carrito, .imagen-inicio-pie-de-pagina, .menu, .contactos, .mi-perfil {
+.div-menu-dropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.menu-dropdown {
+  background-color: #8cdfbf;
+  padding: 7px;
+  transition: all 0.5s;
+}
+
+.menu-dropdown:hover {
+  padding: 12px;
+  border: 4px solid #c9c95c;
+}
+
+.carrito, .imagen-inicio-pie-de-pagina, .menu, .contactos, .mi-perfil, .menu-dropdown {
   display: flex;
   flex-direction: row;
   align-items: center;
