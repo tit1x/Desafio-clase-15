@@ -1,0 +1,35 @@
+@import "variables";
+@import "extends";
+@import "mixins";
+
+.encabezado {
+    background-color: $color-fondo-de-encabezado;
+    padding: 40px 25px 40px 10px;
+    border: 5px solid black;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "imagen-inicio-encabezado productos carrito";
+}
+
+.imagen-inicio-encabezado {
+    grid-area: imagen-inicio-encabezado;
+    display: flex;
+    flex-direction: column;
+    @include prefijos (center)
+}
+
+.productos {
+    grid-area: productos;
+    @extend %flex-column;
+    @include prefijos (space-between)
+}
+.carrito {
+    grid-area: carrito;
+    @extend %flex-row;
+    @include prefijos (space-around)
+}
+.texto-promocional {
+    text-align: center;
+}
