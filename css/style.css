@@ -61,6 +61,11 @@ h6 {
   grid-template-areas: "header" "section" "footer";
 }
 
+@media screen and (min-width: 576px) {
+  .encabezado-celulares {
+    display: none;
+  }
+}
 .menu-dropdown, .mi-perfil, .contactos, .menu, .imagen-inicio-pie-de-pagina, .carrito {
   display: flex;
   flex-direction: row;
@@ -118,22 +123,6 @@ h6 {
 
 @media screen and (min-width: 576px) {
   .encabezado-celulares {
-    display: none;
-  }
-}
-@media screen and (max-width: 576px) {
-  .encabezado {
-    display: none;
-  }
-
-  .encabezado-celulares {
-    background-color: green;
-    grid-area: header;
-    border: 5px solid black;
-    display: flex;
-  }
-
-  .vuelta-inicio {
     display: none;
   }
 }

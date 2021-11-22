@@ -52,18 +52,4 @@
     }
 }
 
-@media screen and (max-width:576px) {
-    .encabezado {display: none;}
-    .encabezado-celulares{
-        background-color: $color-fondo-de-encabezado;
-        grid-area: header;
-        border: 5px solid black;
-        display: flex
-        
-        
 
-    }
-    .vuelta-inicio {display: none;}
-
-    
-}
