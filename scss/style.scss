@@ -52,6 +52,7 @@
         grid-template-columns: 1fr;
         grid-template-areas: "header" "section" "footer";
     }
+
     @media screen and (max-width:576px) {
         .body {
             background-color: $color-fondo-de-pagina ;
@@ -71,9 +72,16 @@
 
     }
     .vuelta-inicio {display: none;}
+}
 
     
     
+
+    @media screen and (min-width:576px){
+        .encabezado-celulares {
+            display: none;
+        }
+
     }
     @import "encabezado";
     @import "pie-de-pagina";

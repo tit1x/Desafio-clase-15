@@ -46,24 +46,5 @@
     border: 4px solid rgb(201, 201, 92);
 }
 
-@media screen and (min-width:576px){
-    .encabezado-celulares {
-        display: none;
-    }
-}
 
-@media screen and (max-width:576px) {
-    .encabezado {display: none;}
-    .encabezado-celulares{
-        background-color: $color-fondo-de-encabezado;
-        grid-area: header-mobile;
-        border: 5px solid black;
-        display: flex
-        
-        
 
-    }
-    .vuelta-inicio {display: none;}
-
-    
-}
