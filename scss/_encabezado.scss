@@ -8,7 +8,7 @@
     border: 5px solid black;
     grid-area: header;
     display: grid;
-    grid-template-columns: 20px 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "imagen-inicio-encabezado productos carrito";
 }
