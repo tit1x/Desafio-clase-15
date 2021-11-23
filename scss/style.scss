@@ -67,10 +67,13 @@
             grid-area: header-mobile;
             border: 5px solid black;
             display: flex
-        
-        
-
     }
+        .pie-de-pagina {
+            background-color: $color-fondo-de-pie-de-pagina;
+            padding: 10px;
+            grid-area: footer-mobile;
+            
+        }
     .vuelta-inicio {display: none;}
 }
 

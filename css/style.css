@@ -81,6 +81,12 @@ h6 {
     display: flex;
   }
 
+  .pie-de-pagina {
+    background-color: black;
+    padding: 10px;
+    grid-area: footer-mobile;
+  }
+
   .vuelta-inicio {
     display: none;
   }
