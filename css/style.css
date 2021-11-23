@@ -70,10 +70,6 @@ h6 {
     grid-template-areas: "header-mobile" "section-mobile" "footer-mobile";
   }
 
-  .encabezado {
-    display: none;
-  }
-
   .encabezado-celulares {
     background-color: green;
     grid-area: header-mobile;
@@ -151,6 +147,11 @@ h6 {
   border: 4px solid #c9c95c;
 }
 
+@media screen and (max-width: 576px) {
+  .encabezado {
+    display: none;
+  }
+}
 .menu-dropdown, .mi-perfil, .contactos, .menu, .imagen-inicio-pie-de-pagina, .carrito {
   display: flex;
   flex-direction: row;

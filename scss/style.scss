@@ -61,7 +61,6 @@
             grid-template-columns: 1fr;
             grid-template-areas: "header-mobile" "section-mobile" "footer-mobile";
         }
-        .encabezado {display: none;}
         .encabezado-celulares{
             background-color: $color-fondo-de-encabezado;
             grid-area: header-mobile;
