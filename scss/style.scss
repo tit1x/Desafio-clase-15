@@ -60,73 +60,15 @@
         grid-template-areas: "header" "section" "footer";
     }
 
-    @media screen and (max-width:992px) {
-        .body {
-            background-color: $color-fondo-de-pagina ;
-            display: grid;
-            grid-template-rows: 80px 1fr 150px;
-            grid-template-columns: 100%;
-            grid-template-areas: "header-mobile" "section-mobile" "footer-mobile";
-        }
-        
-        .pie-de-pagina {
-           display: none;
-            
-        }
-        .encabezado-celulares{
-            grid-area: header-mobile;
-            background-color: $color-fondo-de-encabezado;
-            border: 5px solid black;
-            position: sticky;
-            top: 0;   
-        }
-        .pie-de-pagina-celulares {
-            grid-area: footer-mobile;
-            background-color: $color-fondo-de-pie-de-pagina;
-            padding: 10px;
-            
-        }
-        .imagenes-contactos {
-            max-width: 80px;
-        }
-        .navbar {
-            margin: 0;
-            max-width: 80px;;
-        }
-        .buscador-celular {
-            max-width: 100%;
-        }
-        
-        .vuelta-inicio {display: none;}
-        .button-menu-celulares {
-            padding: 7px;
-            transition: all 0.5s;
-        }
-
-        .button-menu-celulares:hover {
-            padding: 12px;
-            border: 4px solid rgba(126, 126, 46, 0.534);
-        }
-}
-
-    @media screen and (min-width:993px){
-        .encabezado-celulares {
-            display: none;
-        }
-        .pie-de-pagina-celulares {
-            display: none;
-        }
-
-    }
     @import "encabezado";
     @import "pie-de-pagina";
-
+    
     .vuelta-inicio {
         position: relative;
         left: 20px;
         transition: all 0.5s;
     }
-
+    
     .mi-perfil {
         @extend %flex-row;
         flex-wrap: wrap;
@@ -141,7 +83,7 @@
         grid-area: section;
         padding: 100px;
     }
-
+    
     button {
         background-color: rgb(140, 223, 191);
         padding: 7px;
@@ -162,16 +104,83 @@
         transform: scale(1.1);
         border: 0px solid white;
     }
-@import "nav";
-@import "carrito";
-
-.animate__animated.animate__pulse {
-    animation-duration: 2s;
+    @import "nav";
+    @import "carrito";
+    
+    .animate__animated.animate__pulse {
+        animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
 .animate__animated.animate__zoomIn {
     animation-duration: 1.3s;
+}
+@media screen and (max-width:992px) {
+    .body {
+        background-color: $color-fondo-de-pagina ;
+        display: grid;
+        grid-template-rows: 80px 1fr 150px;
+        grid-template-columns: 100%;
+        grid-template-areas: "header-mobile" "section-mobile" "footer-mobile";
+    }
+    
+    .pie-de-pagina {
+       display: none;
+        
+    }
+    .encabezado-celulares{
+        grid-area: header-mobile;
+        background-color: $color-fondo-de-encabezado;
+        border: 5px solid black;
+        position: sticky;
+        top: 0;   
+    }
+    .pie-de-pagina-celulares {
+        grid-area: footer-mobile;
+        background-color: $color-fondo-de-pie-de-pagina;
+        padding: 10px;
+        
+    }
+    .imagenes-contactos {
+        max-width: 80px;
+    }
+    .navbar {
+        margin: 0;
+        max-width: 80px;;
+    }
+    .buscador-celular {
+        max-width: 100%;
+    }
+    
+    .vuelta-inicio {display: none;}
+    .button-menu-celulares {
+        padding: 7px;
+        transition: all 0.5s;
+    }
+
+    .button-menu-celulares:hover {
+        padding: 12px;
+        border: 4px solid rgba(126, 126, 46, 0.534);
+    }
+    section {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+@media screen and (min-width:993px){
+    .encabezado-celulares {
+        display: none;
+    }
+    .pie-de-pagina-celulares {
+        display: none;
+    }
+    .section-carrito-celulares {
+        display: none;
+    }
+
 }
 
 

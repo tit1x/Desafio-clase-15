@@ -44,3 +44,12 @@
     @extend %flex-column;
     @include prefijos (end)
 }
+
+@media screen and (max-width:992px) {
+    .section-carrito{
+        display: none;
+    }
+    .section-carrito-celulares {
+        display: block;
+    }
+}

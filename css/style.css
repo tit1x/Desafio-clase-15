@@ -68,69 +68,6 @@ h6 {
   grid-template-areas: "header" "section" "footer";
 }
 
-@media screen and (max-width: 992px) {
-  .body {
-    background-color: white;
-    display: grid;
-    grid-template-rows: 80px 1fr 150px;
-    grid-template-columns: 100%;
-    grid-template-areas: "header-mobile" "section-mobile" "footer-mobile";
-  }
-
-  .pie-de-pagina {
-    display: none;
-  }
-
-  .encabezado-celulares {
-    grid-area: header-mobile;
-    background-color: green;
-    border: 5px solid black;
-    position: sticky;
-    top: 0;
-  }
-
-  .pie-de-pagina-celulares {
-    grid-area: footer-mobile;
-    background-color: black;
-    padding: 10px;
-  }
-
-  .imagenes-contactos {
-    max-width: 80px;
-  }
-
-  .navbar {
-    margin: 0;
-    max-width: 80px;
-  }
-
-  .buscador-celular {
-    max-width: 100%;
-  }
-
-  .vuelta-inicio {
-    display: none;
-  }
-
-  .button-menu-celulares {
-    padding: 7px;
-    transition: all 0.5s;
-  }
-
-  .button-menu-celulares:hover {
-    padding: 12px;
-    border: 4px solid rgba(126, 126, 46, 0.534);
-  }
-}
-@media screen and (min-width: 993px) {
-  .encabezado-celulares {
-    display: none;
-  }
-
-  .pie-de-pagina-celulares {
-    display: none;
-  }
-}
 .menu-dropdown, .mi-perfil, .contactos, .menu, .imagen-inicio-pie-de-pagina, .carrito {
   display: flex;
   flex-direction: row;
@@ -423,6 +360,15 @@ ul {
   justify-content: end;
 }
 
+@media screen and (max-width: 992px) {
+  .section-carrito {
+    display: none;
+  }
+
+  .section-carrito-celulares {
+    display: block;
+  }
+}
 .animate__animated.animate__pulse {
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -430,6 +376,81 @@ ul {
 
 .animate__animated.animate__zoomIn {
   animation-duration: 1.3s;
+}
+
+@media screen and (max-width: 992px) {
+  .body {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 80px 1fr 150px;
+    grid-template-columns: 100%;
+    grid-template-areas: "header-mobile" "section-mobile" "footer-mobile";
+  }
+
+  .pie-de-pagina {
+    display: none;
+  }
+
+  .encabezado-celulares {
+    grid-area: header-mobile;
+    background-color: green;
+    border: 5px solid black;
+    position: sticky;
+    top: 0;
+  }
+
+  .pie-de-pagina-celulares {
+    grid-area: footer-mobile;
+    background-color: black;
+    padding: 10px;
+  }
+
+  .imagenes-contactos {
+    max-width: 80px;
+  }
+
+  .navbar {
+    margin: 0;
+    max-width: 80px;
+  }
+
+  .buscador-celular {
+    max-width: 100%;
+  }
+
+  .vuelta-inicio {
+    display: none;
+  }
+
+  .button-menu-celulares {
+    padding: 7px;
+    transition: all 0.5s;
+  }
+
+  .button-menu-celulares:hover {
+    padding: 12px;
+    border: 4px solid rgba(126, 126, 46, 0.534);
+  }
+
+  section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+@media screen and (min-width: 993px) {
+  .encabezado-celulares {
+    display: none;
+  }
+
+  .pie-de-pagina-celulares {
+    display: none;
+  }
+
+  .section-carrito-celulares {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
