@@ -395,8 +395,6 @@ ul {
     grid-area: header-mobile;
     background-color: green;
     border: 5px solid black;
-    position: sticky;
-    top: 0;
   }
 
   .pie-de-pagina-celulares {
