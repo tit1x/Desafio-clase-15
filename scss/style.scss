@@ -8,6 +8,13 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+    h1{
+        font-family: $font;  
+        color: $color-Titulos;
+        text-decoration: none;
+        font-size: 16px;
+    }
     h2{
     font-family: $font;
     font-size: $size-Titulos;
@@ -61,41 +68,52 @@
             grid-template-columns: 100%;
             grid-template-areas: "header-mobile" "section-mobile" "footer-mobile";
         }
-        .encabezado {
-            display: none;
+        
+        .pie-de-pagina {
+           display: none;
+            
         }
         .encabezado-celulares{
             grid-area: header-mobile;
             background-color: $color-fondo-de-encabezado;
             border: 5px solid black;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
             position: sticky;
-            top: 0;
-            
-    }
-        .pie-de-pagina {
+            top: 0;   
+        }
+        .pie-de-pagina-celulares {
+            grid-area: footer-mobile;
             background-color: $color-fondo-de-pie-de-pagina;
             padding: 10px;
-            grid-area: footer-mobile;
             
         }
-    .vuelta-inicio {display: none;}
-    .button-menu-celulares {
-        padding: 7px;
-        transition: all 0.5s;
-    }
+        .imagenes-contactos {
+            max-width: 80px;
+        }
+        .navbar {
+            margin: 0;
+            max-width: 80px;;
+        }
+        .buscador-celular {
+            max-width: 100%;
+        }
+        
+        .vuelta-inicio {display: none;}
+        .button-menu-celulares {
+            padding: 7px;
+            transition: all 0.5s;
+        }
 
-    .button-menu-celulares:hover {
-        padding: 12px;
-        border: 4px solid rgba(126, 126, 46, 0.534);
-    }
+        .button-menu-celulares:hover {
+            padding: 12px;
+            border: 4px solid rgba(126, 126, 46, 0.534);
+        }
 }
 
     @media screen and (min-width:993px){
         .encabezado-celulares {
+            display: none;
+        }
+        .pie-de-pagina-celulares {
             display: none;
         }
 

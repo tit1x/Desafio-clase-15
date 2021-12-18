@@ -20,19 +20,19 @@
 </head>
 <body class="animate__animated animate__zoomIn">
     <!--Encabezado-->
-    <header class="encabezado">
+   <header class="encabezado">
 
         <div class="imagen-inicio-encabezado">
-            <a class="vuelta-inicio" href="/index.html"><img src="../Imagenes/Logo Pagina.jpeg" alt="Logo Estacion Natural MaThi" width="193" height="111"></a>
+            <a class="vuelta-inicio" href="index.html"><img src="../Imagenes/Logo Pagina.jpeg" alt="Logo Estacion Natural MaThi" width="193" height="111"></a>
         </div>
 
         <div class="carrito">
             <button>
-                <a class="text-decoration-none" href="Carrito.html"> <h4>Carrito</h4> </a> 
+                <a class="text-decoration-none" href="./Html/Carrito.html"> <h4>Carrito</h4> </a> 
             </button>
 
             <button>
-                <a class="mi-perfil text-decoration-none" href="Mi_Cuenta.html"> <img src="../Imagenes/Mi perfil.jpg" alt="Mi perfil" width="30" height="30"> <h4 class="mi-perfil-texto">Mi perfil</h4> </a> 
+                <a class="mi-perfil text-decoration-none" href="./Html/Mi_Cuenta.html"> <img src="../Imagenes/Mi perfil.jpg" alt="Mi perfil" width="30" height="30"> <h4 class="mi-perfil-texto">Mi perfil</h4> </a> 
             </button>
         </div>
 
@@ -43,21 +43,51 @@
 
             <nav class="navbar navbar-light">
                 <div class="container-fluid">
-                  <form class="d-flex">
+                <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success buscador" type="submit"> <h4> Buscador </h4> </button>
-                  </form>
+                    <button class="btn btn-outline-success buscador" type="submit"> <h4> Buscar </h4> </button>
+                </form>
                 </div>
             </nav>
-      
+    
             <button>
-                <a class="text-decoration-none" href="Productos.html"> <h4>Productos</h4> </a> 
+                <a class="text-decoration-none" href="./Html/Productos.html"> <h4>Productos</h4> </a> 
             </button>
         </div>
-    
+
     </header>
-
-
+    <!--Encabezado celulares-->
+    <header class="encabezado-celulares">
+        <div class="container">
+            <div class="row row-cols-2 justify-content-center">
+                <div class="col-lg-2">
+                <nav class="navbar navbar-dark dropdown menu-encabezado">
+                        <button class="navbar-toggler btn btn-secondary dropdown-toggle button-menu-celulares" type="button" data-bs-toggle="dropdown" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+                            <li><a class="dropdown-item" href="Productos.html">Productos</a></li>
+                            <li><a class="dropdown-item" href="Carrito.html">Carrito</a></li>
+                            <li><a class="dropdown-item" href="Mi_Cuenta.html">Mi perfil</a></li>
+                        </ul>
+                </nav>
+                </div>
+                <div class="col-lg-10">
+                    <nav class="navbar navbar-light buscador-celular">
+                        <div>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success buscador" type="submit"> <h6> Buscar </h6> </button>
+                        </form>
+                        </div>
+                    </nav>
+                </div>
+                
+            
+            </div>
+        </div>
+    </header>
 
     <section class="section-carrito">
 
@@ -145,6 +175,40 @@
                 </li>
             </ul>
         </div>
+
+    </footer>
+    <!--Pie de página celulares-->
+    <footer class="pie-de-pagina-celulares">
+        <div class="container"> 
+            <div class="row contactos">
+                <h2 class="d-flex justify-content-center"> Contactos </h2>
+            </div>
+
+            <div class="div-contactos">
+                <ul>
+                    <div class="row row-cols-3">
+                        <div class="col-lg-4">
+                        <li class="d-flex flex-column align-items-center">
+                            <h5> Instagram </h5>
+                            <a href="https://www.instagram.com/estacionmathi/" target="_blank"><img class= "imagenes-contactos" src="../Imagenes/instagram.jpg"></a>
+                        </li>
+                        </div>
+                        <div class="col-lg-4">
+                        <li class="d-flex flex-column align-items-center">
+                            <h5> Facebook </h5>
+                            <a href="https://www.facebook.com/Estaci%C3%B3n-Natural-MaThi-448270959041252" target="_blank"><img class= "imagenes-contactos" src="../Imagenes/facebook.png"></a>
+                        </li>
+                        </div>
+                        <div class="col-lg-4">
+                        <li class="d-flex flex-column align-items-center">
+                            <h5> Google Maps </h5>
+                            <a href="https://goo.gl/maps/sTF2aYJW19Nvepwa8" target="_blank"><img class= "imagenes-contactos" src="../Imagenes/maps.png"></a>
+                        </li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div> 
 
     </footer>
 
