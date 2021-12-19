@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
-.menu-dropdown, .mi-perfil, .contactos, .menu, .imagen-inicio-pie-de-pagina, .carrito {
+.menu-dropdown, .lista-productos, .mi-perfil, .contactos, .menu, .imagen-inicio-pie-de-pagina, .carrito {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -68,7 +68,7 @@ h6 {
   grid-template-areas: "header" "section" "footer";
 }
 
-.menu-dropdown, .mi-perfil, .contactos, .menu, .imagen-inicio-pie-de-pagina, .carrito {
+.menu-dropdown, .lista-productos, .mi-perfil, .contactos, .menu, .imagen-inicio-pie-de-pagina, .carrito {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -132,7 +132,7 @@ h6 {
     display: block;
   }
 }
-.menu-dropdown, .mi-perfil, .contactos, .menu, .imagen-inicio-pie-de-pagina, .carrito {
+.menu-dropdown, .lista-productos, .mi-perfil, .contactos, .menu, .imagen-inicio-pie-de-pagina, .carrito {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -246,7 +246,7 @@ button:hover {
   border: 0px solid white;
 }
 
-.menu-dropdown, .carrito, .imagen-inicio-pie-de-pagina, .menu, .contactos, .mi-perfil {
+.menu-dropdown, .lista-productos, .carrito, .imagen-inicio-pie-de-pagina, .menu, .contactos, .mi-perfil {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -273,7 +273,6 @@ nav {
 
 .div-lista-productos {
   grid-area: div-lista-productos;
-  flex-wrap: wrap;
   justify-content: flex-start;
 }
 
@@ -291,7 +290,7 @@ ul {
 
 .lista-productos {
   padding: 10px;
-  text-align: center;
+  flex-wrap: wrap;
 }
 
 .div-menu-dropdown {
@@ -311,7 +310,12 @@ ul {
   border: 4px solid #c9c95c;
 }
 
-.carrito, .imagen-inicio-pie-de-pagina, .menu, .contactos, .mi-perfil, .menu-dropdown {
+.imagen-producto {
+  height: 190px;
+  width: 190px;
+}
+
+.carrito, .imagen-inicio-pie-de-pagina, .menu, .contactos, .mi-perfil, .lista-productos, .menu-dropdown {
   display: flex;
   flex-direction: row;
   align-items: center;
