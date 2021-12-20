@@ -20,7 +20,8 @@ h1 {
   font-family: "Roboto", sans-serif;
   color: #2e912e;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 40px;
+  padding-bottom: 40px;
 }
 
 h2 {
@@ -373,6 +374,26 @@ ul {
     display: block;
   }
 }
+.carrito, .imagen-inicio-pie-de-pagina, .menu, .contactos, .mi-perfil, .lista-productos, .menu-dropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.productos, .div-menu, .div-contactos, .div-lista, .div-lista-productos, .carrito-grid-uno, .carrito-grid-dos, .carrito-grid-tres, .carrito-grid-cuatro, .carrito-grid-cinco, .pagar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div-registrarse {
+  padding-bottom: 25px;
+}
+
+.section-registrarse {
+  padding: 30px;
+}
+
 .animate__animated.animate__pulse {
   animation-duration: 2s;
   animation-iteration-count: infinite;

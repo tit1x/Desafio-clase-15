@@ -13,7 +13,8 @@
         font-family: $font;  
         color: $color-Titulos;
         text-decoration: none;
-        font-size: 16px;
+        font-size: $size-Titulos;
+        padding-bottom: 40px ;
     }
     h2{
     font-family: $font;
@@ -104,8 +105,11 @@
         transform: scale(1.1);
         border: 0px solid white;
     }
+
+
     @import "nav";
     @import "carrito";
+    @import "registrarse";
     
     .animate__animated.animate__pulse {
         animation-duration: 2s;
