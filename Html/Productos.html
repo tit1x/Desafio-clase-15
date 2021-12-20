@@ -89,8 +89,7 @@
         </div>
     </header>
 
-    <nav>
-
+    <nav class="nav-pc">
         <div class="div-lista">
             <div class="dropdown div-menu-dropdown">
                 <button class="btn btn-secondary dropdown-toggle menu-dropdown" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -112,6 +111,7 @@
                         </li>
                         <li class="list-group-item">
                             <h6>Empanadas </h6>
+                        </li>
                     </ul>
                 <li> <h3>Bebidas <input class="form-check-input me-1 d-flex " type="checkbox" value="" aria-label="..."> </h3> </li>
                     <ul class="lista-interior list-group">                       
@@ -120,6 +120,7 @@
                         </li>
                         <li class="list-group-item">
                             <h6>Leches Vegetales </h6>
+                        </li>
                     </ul>
                 <li> <h3>Alacena <input class="form-check-input me-1 d-flex " type="checkbox" value="" aria-label="..."> </h3> </li>
                     <ul class="lista-interior list-group">                       
@@ -128,6 +129,7 @@
                         </li>
                         <li class="list-group-item">
                             <h6>Arroz y legumbres </h6>
+                        </li>
                     </ul>
                 <li> <h3>Refrigerados <input class="form-check-input me-1 d-flex " type="checkbox" value="" aria-label="..."> </h3> </li>
                     <ul class="lista-interior list-group">                       
@@ -136,6 +138,7 @@
                         </li>
                         <li class="list-group-item">
                             <h6>Yogures </h6>
+                        </li>
                     </ul>
                 <li> <h3>Empaquetados <input class="form-check-input me-1 d-flex " type="checkbox" value="" aria-label="..."> </h3> </li>
                     <ul class="lista-interior list-group">                       
@@ -144,9 +147,11 @@
                         </li>
                         <li class="list-group-item">
                             <h6>Barritas de Cereales </h6>
+                        </li>
                     </ul>
             </ul>
         </div>
+        
 
         <div class="div-lista-productos">
             <div class="lista-productos">
@@ -229,6 +234,123 @@
                 </div>
             </div>
         </div>
+    </nav>
+
+    <nav class="nav-celulares">
+        <div class="container-fluid">
+            <div class="row row-cols-3">
+            <div class="dropdown dropend col d-flex justify-content-end">
+                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Productos
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#"><h3>Congelados <input class="form-check-input me-1 d-flex " type="checkbox" value="" aria-label="..."> </h3></a></li>
+                <li><a class="dropdown-item" href="#"><h3>Bebidas <input class="form-check-input me-1 d-flex " type="checkbox" value="" aria-label="..."> </h3></a></li>
+                <li><a class="dropdown-item" href="#"><h3>Alacena <input class="form-check-input me-1 d-flex " type="checkbox" value="" aria-label="..."> </h3></a></li>
+                <li><a class="dropdown-item" href="#"><h3>Refrigerados <input class="form-check-input me-1 d-flex " type="checkbox" value="" aria-label="..."> </h3></a></li>
+                <li><a class="dropdown-item" href="#"><h3>Empaquetados <input class="form-check-input me-1 d-flex " type="checkbox" value="" aria-label="..."> </h3></a></li>
+                </ul>
+            </div>
+            
+            <div class="col d-flex justify-content-center">
+            <button> Filtrar</button>
+            </div>
+        
+            <div class="dropdown dropstart div-menu-dropdown col d-flex justify-content-start">
+                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ordenar por 
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Relevancia</a></li>
+                  <li><a class="dropdown-item" href="#">Mayor precio</a></li>
+                  <li><a class="dropdown-item" href="#">Menor precio</a></li>
+                </ul>
+            </div> 
+            </div>
+        </div>
+
+        <div class="div-lista-productos">
+            <div class="lista-productos d-flex justify-content-center">
+                <div class="card m-2" style="width: 12rem; height: 375px;">
+                    <img src="../Imagenes/Milanesa de Soja.jpeg" class="card-img-top imagen-producto" alt="Milanesa de soja">
+                    <div class="card-body bg-dark d-flex flex-column justify-content-between">
+                      <h5 class="card-title text-white">Milanesas de Soja de Queso y Cebolla x 4 Unidades - Prasat </h5>
+                      <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                    </div>
+                </div>
+                <div class="card m-2" style="width: 12rem; height: 375px;">
+                    <img src="../Imagenes/Empanadas.jpeg" class="card-img-top imagen-producto" alt="Empanadas sin TACC">
+                    <div class="card-body bg-dark d-flex flex-column justify-content-between">
+                      <h5 class="card-title text-white">Empanadas de Verdura Sin TACC x 2 Unidades - La Delfina </h5>
+                      <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                    </div>
+                </div>
+                <div class="card m-2" style="width: 12rem; height: 375px;">
+                    <img src="../Imagenes/Jugos de manzana.jpeg" class="card-img-top imagen-producto" alt="Jugo de manzana">
+                    <div class="card-body bg-dark d-flex flex-column justify-content-between">
+                      <h5 class="card-title text-white">Jugo 100% Exprimido Manzana Roja y Verde x 1000 ml - PURA FRUTTA</h5>
+                      <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                    </div>
+                </div>
+                <div class="card m-2" style="width: 12rem; height: 375px;">
+                    <img src="../Imagenes/Leche.jpeg" class="card-img-top imagen-producto" alt="Leche vegetal">
+                    <div class="card-body bg-dark d-flex flex-column justify-content-between">
+                      <h5 class="card-title text-white">Not Milk Original x 1lt - NotCo</h5>
+                      <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                    </div>
+                </div>
+                <div class="card m-2" style="width: 12rem; height: 375px;">
+                    <img src="../Imagenes/Aceite de oliva.jpeg" class="card-img-top imagen-producto" alt="Milanesa de soja">
+                    <div class="card-body bg-dark d-flex flex-column justify-content-between">
+                      <h5 class="card-title text-white">Aceite De Oliva Virgen X 1lt - EL FEDERAL</h5>
+                      <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                    </div>
+                </div>
+                <div class="card m-2" style="width: 12rem; height: 375px;">
+                    <img src="../Imagenes/Lentejas.jpeg" class="card-img-top imagen-producto" alt="Milanesa de soja">
+                    <div class="card-body bg-dark d-flex flex-column justify-content-between">
+                      <h5 class="card-title text-white">Lentejas 500g</h5>
+                      <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                    </div>
+                </div>
+                <div class="card m-2" style="width: 12rem; height: 375px;">
+                    <img src="../Imagenes/Arroz yamani integral.jpeg" class="card-img-top imagen-producto" alt="Milanesa de soja">
+                    <div class="card-body bg-dark d-flex flex-column justify-content-between">
+                      <h5 class="card-title text-white">Arroz Yamani Integral 500g</h5>
+                      <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                    </div>
+                </div>
+                <div class="card m-2" style="width: 12rem; height: 375px;">
+                    <img src="../Imagenes/Dulce de leche.jpeg" class="card-img-top imagen-producto" alt="Milanesa de soja">
+                    <div class="card-body bg-dark d-flex flex-column justify-content-between">
+                      <h5 class="card-title text-white">Dulce De Leche Tradicional 450g - Las Quinas </h5>
+                      <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                    </div>
+                </div>
+                <div class="card m-2" style="width: 12rem; height: 375px;">
+                    <img src="../Imagenes/Yogur con cereal.jpg" class="card-img-top imagen-producto" alt="Milanesa de soja">
+                    <div class="card-body bg-dark d-flex flex-column justify-content-between">
+                      <h5 class="card-title text-white">Yogurt a Base de Coco Vainilla con Granola Apto APLV x 160 g CRUDDA</h5>
+                      <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                    </div>
+                </div>
+                <div class="card m-2" style="width: 12rem; height: 375px;">
+                    <img src="../Imagenes/Galletitas de varios sabores.jpeg" class="card-img-top imagen-producto" alt="Milanesa de soja">
+                    <div class="card-body bg-dark d-flex flex-column justify-content-between">
+                      <h5 class="card-title text-white">Cookies Sabor A Elección x 200g - Delicel</h5>
+                      <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                    </div>
+                </div>
+                <div class="card m-2" style="width: 12rem; height: 375px;">
+                    <img src="../Imagenes/Barritas de cereal.jpeg" class="card-img-top imagen-producto" alt="Milanesa de soja">
+                    <div class="card-body bg-dark d-flex flex-column justify-content-between">
+                      <h5 class="card-title text-white">Barra Sabor A Elección x 42g - Íntegra</h5>
+                      <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </nav>
 
 
